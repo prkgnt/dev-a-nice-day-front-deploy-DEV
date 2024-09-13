@@ -1,0 +1,21 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.contentBox {
+  padding: 20px;
+}
+.termsText {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.termsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  border-bottom: 1px solid #2e2e2e;
+}

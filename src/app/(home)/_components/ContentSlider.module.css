@@ -1,0 +1,133 @@
+.slideContainer {
+  padding: 0 20px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.swiperSlide {
+  max-height: calc(100dvh - 48px);
+  padding-top: 48px;
+}
+.dateText {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b5b5b5;
+}
+.titleBox {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.titleWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.providerTitle {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+  color: #aaaaaa;
+  width: fit-content;
+}
+.title {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #f1f1f1;
+  line-height: 1.1;
+}
+.imgBox {
+  position: relative;
+  height: 30dvh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media (max-height: 700px) {
+  .imgBox {
+    height: 20dvh;
+  }
+}
+@media (max-height: 600px) {
+  .imgBox {
+    height: 10dvh;
+  }
+}
+.summaryBox {
+  margin-top: 15px;
+  position: relative;
+}
+.summary {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.summaryTextBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px 0px;
+  margin: 5px 0;
+}
+.summaryText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 10px;
+  line-height: 1.2;
+}
+@media (min-width: 600px) {
+  .summaryText {
+    font-size: 20px;
+  }
+}
+.categoryBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+.categoryText {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fdaeff;
+  margin-right: 8px;
+}
+
+.summaryBtn {
+  height: 350;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.providerIcon:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.summaryBtn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.providerTitle:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+@keyframes scale-up-down {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.image-animation {
+  animation: scale-up-down 0.5s ease-in-out forwards;
+}
